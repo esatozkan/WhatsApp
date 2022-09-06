@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sohbet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <span>Sohbete Bağlanmak için isminizi giriniz</span>
+            <input type="text" id="myName" placeholder="İsim Giriniz" autocomplete="off">
+            <button onclick="sohbeteBasla();"><i class="fa fa-comment">Sohbete Başla</i></button>
+        </div>
+        <h2>Sohbet</h2>
+        <ul id="messages" class="messages">
+            <li class="message">
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti nulla consequuntur aliquam nobis quae?
+                </p>
+                <span class="sender">Abone</span>
+                <span class="date">12.00</span>
+            </li>
+        </ul>
+        <div class="input">
+            <input type="text" id="myInput">
+            <button onclick="mesajGonder();"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
